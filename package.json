@@ -1,0 +1,19 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "mock server",
+  "main": "yes",
+  "license": "MIT",
+  "dependencies": {
+    "@types/graphql": "^14.5.0",
+    "apollo-server": "^2.16.1",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "start": "npm run build:dev",
+    "build:dev": "nodemon 'index.ts' --exec 'ts-node' index.ts -e ts,graphql"
+  }
+}
