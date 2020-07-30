@@ -1,18 +1,5 @@
 import {ApolloServer, gql} from 'apollo-server'
 
-
-interface NutritionInfo {
-    calories: number
-    fat: number
-    carb: number
-    protein: number
-}
-
-interface Dessert {
-    dessert: string
-    nutritionInfo: NutritionInfo
-}
-
 const typeDefs = gql `
   type Dessert {
       dessert: String
